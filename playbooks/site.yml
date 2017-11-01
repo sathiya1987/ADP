@@ -1,0 +1,7 @@
+---
+- name: Install nginx
+  become: true
+  hosts: webserver
+  remote_user: centos
+  roles:
+     - nginx
