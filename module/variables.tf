@@ -1,4 +1,6 @@
 variable "aws_region" { default = "us-west-2" description = "Aws IAM role token using SAML" }
+variable "aws_access_key" { description = "Aws IAM role access key using SAML" }
+variable "aws_secret_key" { description = "Aws IAM role secret key using SAML" }
 variable "subnet_id" {  default = "subnet-3ff16b76" }
 variable "security_groups" {  default = ["sg-6501c01f"] }
 variable "instance_type" { description = "AWS Instance Type" default = "t2.micro" }
