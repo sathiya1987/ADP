@@ -19,7 +19,7 @@ provisioner "local-exec" {
 
 
 provisioner "local-exec" {
-	command = "ansible-playbook -i hosts /home/centos/playbooks/site.yml --private-key=/home/centos/p.pem"
+	command = "ansible-playbook -i /home/centos/playbooks/hosts /home/centos/playbooks/site.yml --private-key=/home/centos/p.pem"
   }
 
 
